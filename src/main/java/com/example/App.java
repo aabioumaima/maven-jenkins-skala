@@ -6,4 +6,4 @@ public class App {
     }
 }
 
-<!-- This is a comment in Maven POM file -->
+<!--  This a new change after succuing the project but still have the maven problem, mv not found in jenkins  This is a comment in Maven POM file -->
