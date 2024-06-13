@@ -6,3 +6,4 @@ public class App {
     }
 }
 
+<!-- This is a comment in Maven POM file -->
