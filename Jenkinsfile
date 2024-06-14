@@ -17,9 +17,9 @@ pipeline {
                 script {
                     try {
                         sh 'mvn clean compile'
-                        currentBuild.result = 'SUCCESS'
+                        currentBuild.result = 'Build SUCCESS'
                     } catch (Exception e) {
-                        currentBuild.result = 'FAILURE'
+                        currentBuild.result = 'Build FAILURE'
                         throw e
                     }
                 }
@@ -31,9 +31,9 @@ pipeline {
                 script {
                     try {
                         sh 'mvn test'
-                        currentBuild.result = 'SUCCESS'
+                        currentBuild.result = 'Test SUCCESS'
                     } catch (Exception e) {
-                        currentBuild.result = 'FAILURE'
+                        currentBuild.result = 'Test FAILURE'
                         throw e
                     }
                 }
@@ -45,9 +45,9 @@ pipeline {
                 script {
                     try {
                         sh 'mvn package'
-                        currentBuild.result = 'SUCCESS'
+                        currentBuild.result = 'Package SUCCESS'
                     } catch (Exception e) {
-                        currentBuild.result = 'FAILURE'
+                        currentBuild.result = 'Package FAILURE'
                         throw e
                     }
                 }
@@ -60,9 +60,9 @@ pipeline {
                     try {
                         // Replace with your actual deployment command
                         sh 'mvn deploy'
-                        currentBuild.result = 'SUCCESS'
+                        currentBuild.result = 'Deploy SUCCESS'
                     } catch (Exception e) {
-                        currentBuild.result = 'FAILURE'
+                        currentBuild.result = 'Delpoy FAILURE'
                         throw e
                     }
                 }
